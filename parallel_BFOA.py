@@ -74,7 +74,7 @@ if __name__ == "__main__":
         operadorBacterial.creaTablaFitness()
         print("tabla Fitness creada ")
 
-        # 🧠 MEJORA: Ajuste adaptativo para bacterias con bajo fitness
+        #  MEJORA: Ajuste adaptativo para bacterias con bajo fitness
         promedio = sum(operadorBacterial.tablaFitness) / len(operadorBacterial.tablaFitness)
         for i, fit in enumerate(operadorBacterial.tablaFitness):
             if fit < promedio:
@@ -88,7 +88,7 @@ if __name__ == "__main__":
                     else:
                         if secuencia[idx] == '-':
                             secuencia.pop(idx)
-        # 🧠 FIN DE MEJORA
+        #  FIN DE MEJORA
 
         globalNFE += operadorBacterial.getNFE()
         bestIdx, bestFitness = operadorBacterial.obtieneBest(globalNFE)
